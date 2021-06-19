@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1418587377</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Libraries\lib\oled_driver.c</file>
+            <file>$PROJ_DIR$\Libraries\lib\font5x7.c</file>
+            <file>$PROJ_DIR$\Libraries\core\stm32f051x8.h</file>
+            <file>$PROJ_DIR$\..\exti\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\p.c</file>
+            <file>$PROJ_DIR$\Snake\snake.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\Snake\snake.c</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_cortex.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\oled_driver.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_rcc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\p.pbi</file>
+            <file>$PROJ_DIR$\Debug\List\stm32_course.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\oled_driver.pbi</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_tim.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\default.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\xprintf.pbi</file>
+            <file>$PROJ_DIR$\default.c</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_utils.h</file>
+            <file>$PROJ_DIR$\Libraries\core\stm32f0xx.h</file>
+            <file>$PROJ_DIR$\Libraries\lib\oled_driver.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\donov.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\xprintf.o</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_exti.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\Libraries\core\core_cm0.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_handlers.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\p.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\stm32_course.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$PROJ_DIR$\Libraries\core\system_stm32f0xx.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\startup_stm32f051.s</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Libraries\core\system_stm32f0xx.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32_course.pbd</file>
+            <file>$PROJ_DIR$\Libraries\lib\snake.h</file>
+            <file>$PROJ_DIR$\Libraries\lib\xprintf.c</file>
+            <file>$PROJ_DIR$\..\exti\exti_button.c</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_system.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f051.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32f0xx.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_i2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\exti_button.pbi</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_bus.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f051x8.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\font5x7.o</file>
+            <file>$PROJ_DIR$\exti_button.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\snake.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\exti_button.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\font5x7.pbi</file>
+            <file>$PROJ_DIR$\donov.c</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_handlers.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Snake\snake.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\default.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Libraries\lib\xprintf.h</file>
+            <file>$PROJ_DIR$\Libraries\lib\system_handlers.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32f0xx.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 20 39</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 30 3 36 72 12 44 55 51 69 42 13 41 50 58 67 34 23 73 31 47</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31 30 34 51 58 41 42 13 50 67 23 73 47 3 36 72 12 69 44 17 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Libraries\lib\oled_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 30 3 36 72 12 44 55 51 69 42 13 41 67 17 50 56 31 18 21 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 12 56 69 17 18 44 26 67 50 31 30 3 36 72 51 13 21 58 42 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Libraries\lib\font5x7.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72 12 44 55 51 69 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 12 55 44 72 51 69 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\exti\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30 34 13 58 10 50 67 29 41 72 44 55 17 3 36 42 12 51 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\p.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Snake\snake.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 40 12 44 55 51 69 21 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\default.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\stm32_course.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 59 61 5 11 52 54 33 16 35 14 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32f051.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Libraries\core\system_stm32f0xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 3 36 72 12 44 55 51 69 42 13 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36 13 3 72 41 44 55 30 42 12 51 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Libraries\lib\xprintf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 8 44 73 12 51 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\exti\exti_button.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 30 3 36 72 12 44 55 51 69 42 13 41 50 58 67 34 23 73 31 47</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44 30 31 36 34 58 41 3 72 50 67 23 73 47 55 17 42 12 51 69 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\exti_button.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\donov.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Snake\snake.cpp</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 40 12 44 55 51 69 21 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 44 21 12 40 15 51 69 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Libraries\lib\system_handlers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,384 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  19/Jun/2021  09:45:56
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Exe\stm32_course.out
+#    Map file     =  
+#        C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\List\stm32_course.map
+#    Command line =  
+#        -f C:\Temp\EW7C1B.tmp ("C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\font5x7.o"
+#        "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\main.o"
+#        "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\oled_driver.o"
+#        "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\startup_stm32f051.o"
+#        "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\system_stm32f0xx.o"
+#        "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Obj\xprintf.o"
+#        --no_out_extension -o "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\Exe\stm32_course.out"
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map "C:\Users\Иван
+#        Панферов\Desktop\stm_labs\i2c\Debug\List\stm32_course.map"
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.1\arm\config\linker\ST\stm32f051x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code   0x800'0000    0xc0  startup_stm32f051.o [1]
+                             - 0x800'00c0    0xc0
+
+"P1":                                      0x18e8
+  .text              ro code   0x800'00c0   0x89e  main.o [1]
+  .text              ro code   0x800'095e     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'0960   0x52c  oled_driver.o [1]
+  .text              ro code   0x800'0e8c    0xe0  I32DivModFast.o [3]
+  .text              ro code   0x800'0f6c   0x2c8  xprintf.o [1]
+  .text              ro code   0x800'1234    0x4e  ABImemset.o [3]
+  .text              ro code   0x800'1282     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1284     0x2  IntDivZer.o [3]
+  .text              ro code   0x800'1286     0x2  startup_stm32f051.o [1]
+  .rodata            const     0x800'1288   0x4fc  font5x7.o [1]
+  .text              ro code   0x800'1784    0x80  system_stm32f0xx.o [1]
+  .text              ro code   0x800'1804    0x3c  zero_init3.o [3]
+  .text              ro code   0x800'1840    0x30  copy_init3.o [3]
+  .text              ro code   0x800'1870    0x28  font5x7.o [1]
+  .text              ro code   0x800'1898    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'18c0    0x24  - Linker created -
+  .text              ro code   0x800'18e4    0x1e  cmain.o [3]
+  .text              ro code   0x800'1902     0x4  low_level_init.o [2]
+  .text              ro code   0x800'1906     0x8  exit.o [2]
+  .text              ro code   0x800'190e     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1910     0xa  cexit.o [3]
+  .text              ro code   0x800'191a     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'191c    0x14  exit.o [4]
+  .rodata            const     0x800'1930    0x14  main.o [1]
+  .text              ro code   0x800'1944    0x10  startup_stm32f051.o [1]
+  Initializer bytes  const     0x800'1954    0x10  <for P2-1>
+  .text              ro code   0x800'1964     0xc  cstartup_M.o [3]
+  .text              ro code   0x800'1970     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1972     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1974     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1976     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1978     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'197a     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'197c     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'197e     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1980     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1982     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1984     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1986     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1988     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'198a     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'198c     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'198e     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1990     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1992     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1994     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1996     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'1998     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'199a     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'199c     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'199e     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'19a0     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'19a2     0x2  startup_stm32f051.o [1]
+  .text              ro code   0x800'19a4     0x2  startup_stm32f051.o [1]
+  .rodata            const     0x800'19a6     0x1  main.o [1]
+  .rodata            const     0x800'19a7     0x1  main.o [1]
+  .rodata            const     0x800'19a8     0x0  zero_init3.o [3]
+  .rodata            const     0x800'19a8     0x0  copy_init3.o [3]
+                             - 0x800'19a8  0x18e8
+
+"P2", part 1 of 3:                           0x10
+  P2-1                        0x2000'0000    0x10  <Init block>
+    .data            inited   0x2000'0000     0xc  font5x7.o [1]
+    .data            inited   0x2000'000c     0x4  system_stm32f0xx.o [1]
+                            - 0x2000'0010    0x10
+
+"P2", part 2 of 3:                          0x410
+  .bss               zero     0x2000'0010   0x400  oled_driver.o [1]
+  .bss               zero     0x2000'0410     0x4  main.o [1]
+  .bss               zero     0x2000'0414     0x4  xprintf.o [1]
+  .bss               zero     0x2000'0418     0x4  xprintf.o [1]
+  .bss               zero     0x2000'041c     0x1  main.o [1]
+  .bss               zero     0x2000'041d     0x1  oled_driver.o [1]
+  .bss               zero     0x2000'041e     0x1  oled_driver.o [1]
+                            - 0x2000'041f   0x40f
+
+"P2", part 3 of 3:                          0x800
+  CSTACK                      0x2000'0420   0x800  <Block>
+    CSTACK           uninit   0x2000'0420   0x800  <Block tail>
+                            - 0x2000'0c20   0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'19a8   0x800'ffff  0xe658
+  0x2000'0c20  0x2000'1fff  0x13e0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x40f:
+          0x2000'0010  0x40f
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+           0x800'1954   0x10
+    1 destination range, total size 0x10:
+          0x2000'0000   0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+command line/config:
+    ----------------------------------------------
+    Total:
+
+C:\Users\Иван Панферов\Desktop\stm_labs\i2c\Debug\Obj: [1]
+    font5x7.o                 40    1 288       12
+    main.o                 2 206       22        5
+    oled_driver.o          1 324             1 026
+    startup_stm32f051.o      272
+    system_stm32f0xx.o       128        4        4
+    xprintf.o                712                 8
+    ----------------------------------------------
+    Total:                 4 682    1 314    1 055
+
+dl6M_tln.a: [2]
+    exit.o                     8
+    low_level_init.o           4
+    ----------------------------------------------
+    Total:                    12
+
+rt6M_tl.a: [3]
+    ABImemset.o               78
+    I32DivModFast.o          224
+    IntDivZer.o                2
+    cexit.o                   10
+    cmain.o                   30
+    copy_init3.o              48
+    cstartup_M.o              12
+    data_init.o               40
+    zero_init3.o              60
+    ----------------------------------------------
+    Total:                   504
+
+shb_l.a: [4]
+    exit.o                    20
+    ----------------------------------------------
+    Total:                    20
+
+    Linker created                     36    2 048
+--------------------------------------------------
+    Grand Total:           5 218    1 350    3 103
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'18c0          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'18e4          --   Gb  - Linker created -
+?main                    0x800'18e5         Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0420          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0c20          --   Gb  - Linker created -
+Candy                    0x800'08a7   0x78  Code  Gb  main.o [1]
+EXTI0_1_IRQHandler       0x800'0453   0x5a  Code  Gb  main.o [1]
+Game                     0x800'061d  0x1b2  Code  Gb  main.o [1]
+H_SIZE                   0x800'19a6    0x1  Data  Gb  main.o [1]
+LL_AHB1_GRP1_EnableClock
+                         0x800'0229   0x16  Code  Lc  main.o [1]
+LL_AHB1_GRP1_EnableClock
+                         0x800'0961   0x16  Code  Lc  oled_driver.o [1]
+LL_APB1_GRP1_EnableClock
+                         0x800'023f   0x16  Code  Lc  main.o [1]
+LL_APB1_GRP1_EnableClock
+                         0x800'0977   0x16  Code  Lc  oled_driver.o [1]
+LL_APB1_GRP2_EnableClock
+                         0x800'0255   0x16  Code  Lc  main.o [1]
+LL_EXTI_ClearFlag_0_31   0x800'02e1    0x6  Code  Lc  main.o [1]
+LL_EXTI_EnableIT_0_31    0x800'02b7    0xa  Code  Lc  main.o [1]
+LL_EXTI_EnableRisingTrig_0_31
+                         0x800'02c1    0xa  Code  Lc  main.o [1]
+LL_EXTI_IsActiveFlag_0_31
+                         0x800'02cb   0x16  Code  Lc  main.o [1]
+LL_FLASH_SetLatency      0x800'021b    0xe  Code  Lc  main.o [1]
+LL_GPIO_IsInputPinSet    0x800'02a3   0x14  Code  Lc  main.o [1]
+LL_GPIO_SetAFPin_0_7     0x800'09d7   0x24  Code  Lc  oled_driver.o [1]
+LL_GPIO_SetPinMode       0x800'026b   0x1c  Code  Lc  main.o [1]
+LL_GPIO_SetPinMode       0x800'098d   0x1c  Code  Lc  oled_driver.o [1]
+LL_GPIO_SetPinOutputType
+                         0x800'09a9   0x12  Code  Lc  oled_driver.o [1]
+LL_GPIO_SetPinPull       0x800'0287   0x1c  Code  Lc  main.o [1]
+LL_GPIO_SetPinSpeed      0x800'09bb   0x1c  Code  Lc  oled_driver.o [1]
+LL_I2C_Disable           0x800'0a13    0xa  Code  Lc  oled_driver.o [1]
+LL_I2C_DisableAnalogFilter
+                         0x800'0a2b    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_DisableClockStretching
+                         0x800'0a37    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_Enable            0x800'0a09    0xa  Code  Lc  oled_driver.o [1]
+LL_I2C_HandleTransfer    0x800'0a77   0x1e  Code  Lc  oled_driver.o [1]
+LL_I2C_IsActiveFlag_TC   0x800'0a6b    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_IsActiveFlag_TXIS
+                         0x800'0a5f    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_SetDigitalFilter
+                         0x800'0a1d    0xe  Code  Lc  oled_driver.o [1]
+LL_I2C_SetMasterAddressingMode
+                         0x800'0a43    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_SetMode           0x800'0a53    0xc  Code  Lc  oled_driver.o [1]
+LL_I2C_SetTiming         0x800'0a4f    0x4  Code  Lc  oled_driver.o [1]
+LL_I2C_TransmitData8     0x800'0a95    0x8  Code  Lc  oled_driver.o [1]
+LL_RCC_GetSysClkSource   0x800'0183    0xa  Code  Lc  main.o [1]
+LL_RCC_HSI_Enable        0x800'015b    0xc  Code  Lc  main.o [1]
+LL_RCC_HSI_IsReady       0x800'0167    0xe  Code  Lc  main.o [1]
+LL_RCC_PLL_ConfigDomain_SYS
+                         0x800'01c5   0x2a  Code  Lc  main.o [1]
+LL_RCC_PLL_Enable        0x800'01a9    0xe  Code  Lc  main.o [1]
+LL_RCC_PLL_IsReady       0x800'01b7    0xe  Code  Lc  main.o [1]
+LL_RCC_SetAHBPrescaler   0x800'018d    0xe  Code  Lc  main.o [1]
+LL_RCC_SetAPB1Prescaler
+                         0x800'019b    0xe  Code  Lc  main.o [1]
+LL_RCC_SetI2CClockSource
+                         0x800'09fb    0xe  Code  Lc  oled_driver.o [1]
+LL_RCC_SetSysClkSource   0x800'0175    0xe  Code  Lc  main.o [1]
+LL_SYSCFG_SetEXTISource
+                         0x800'01ef   0x2c  Code  Lc  main.o [1]
+LL_TIM_ClearFlag_UPDATE
+                         0x800'0305    0x8  Code  Lc  main.o [1]
+LL_TIM_EnableCounter     0x800'02e7    0xa  Code  Lc  main.o [1]
+LL_TIM_EnableIT_UPDATE   0x800'030d    0xa  Code  Lc  main.o [1]
+LL_TIM_SetAutoReload     0x800'0301    0x4  Code  Lc  main.o [1]
+LL_TIM_SetCounterMode    0x800'02f1    0xc  Code  Lc  main.o [1]
+LL_TIM_SetPrescaler      0x800'02fd    0x4  Code  Lc  main.o [1]
+NVIC_EnableIRQ           0x800'00c1    0xe  Code  Lc  main.o [1]
+NVIC_SetPriority         0x800'00cf   0x8c  Code  Lc  main.o [1]
+Offset                   0x800'0859   0x4e  Code  Gb  main.o [1]
+Over                     0x800'07e1   0x72  Code  Gb  main.o [1]
+Region$$Table$$Base      0x800'18c0          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'18e4          --   Gb  - Linker created -
+Snake_                   0x800'04d5  0x128  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'000c    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit               0x800'1785   0x52  Code  Gb  system_stm32f0xx.o [1]
+TIM2_IRQHandler          0x800'03f1   0x14  Code  Gb  main.o [1]
+V_SIZE                   0x800'19a7    0x1  Data  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'1fff         Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+__aeabi_idiv             0x800'0eb9         Code  Gb  I32DivModFast.o [3]
+__aeabi_idiv0            0x800'1285         Code  Gb  IntDivZer.o [3]
+__aeabi_idivmod          0x800'0eb9         Code  Gb  I32DivModFast.o [3]
+__aeabi_memset           0x800'1235         Code  Gb  ABImemset.o [3]
+__aeabi_uidiv            0x800'0ebf         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'0ebf         Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'18e5         Code  Gb  cmain.o [3]
+__exit                   0x800'191d   0x14  Code  Gb  exit.o [4]
+__iar_Memset4_word       0x800'1255         Code  Gb  ABImemset.o [3]
+__iar_Memset_word        0x800'1241         Code  Gb  ABImemset.o [3]
+__iar_copy_init3         0x800'1841   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'1899   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'1965         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'1805   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'1903    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f051.o [1]
+_call_main               0x800'18f1         Code  Gb  cmain.o [3]
+_exit                    0x800'1911         Code  Gb  cexit.o [3]
+_main                    0x800'18ff         Code  Gb  cmain.o [3]
+action                  0x2000'041c    0x1  Data  Gb  main.o [1]
+curX                    0x2000'041d    0x1  Data  Lc  oled_driver.o [1]
+curY                    0x2000'041e    0x1  Data  Lc  oled_driver.o [1]
+exit                     0x800'1907    0x8  Code  Gb  exit.o [2]
+exti_config              0x800'0411   0x42  Code  Lc  main.o [1]
+font_data                0x800'1288  0x4fc  Data  Gb  font5x7.o [1]
+font_desc               0x2000'0000    0xc  Data  Gb  font5x7.o [1]
+get_pix                  0x800'1871   0x28  Code  Gb  font5x7.o [1]
+gmem                    0x2000'0010  0x400  Data  Lc  oled_driver.o [1]
+gpio_config              0x800'0363   0x46  Code  Lc  main.o [1]
+main                     0x800'0931   0x2e  Code  Gb  main.o [1]
+ms                      0x2000'0410    0x4  Data  Lc  main.o [1]
+oled_clr                 0x800'0c01   0x1a  Code  Gb  oled_driver.o [1]
+oled_cmd_send            0x800'0b43   0x52  Code  Lc  oled_driver.o [1]
+oled_config              0x800'0c5d   0x9a  Code  Gb  oled_driver.o [1]
+oled_data_send           0x800'0b95   0x6c  Code  Lc  oled_driver.o [1]
+oled_hw_config           0x800'0a9d   0xa6  Code  Lc  oled_driver.o [1]
+oled_putc                0x800'0dd9   0xa0  Code  Gb  oled_driver.o [1]
+oled_set_pix             0x800'0d05   0xbe  Code  Gb  oled_driver.o [1]
+oled_update              0x800'0c1b   0x3a  Code  Gb  oled_driver.o [1]
+outptr                  0x2000'0418    0x4  Data  Lc  xprintf.o [1]
+printf_config            0x800'04ad    0x8  Code  Lc  main.o [1]
+rcc_config               0x800'0317   0x4c  Code  Lc  main.o [1]
+timers_config            0x800'03a9   0x40  Code  Lc  main.o [1]
+xfunc_out               0x2000'0414    0x4  Data  Gb  xprintf.o [1]
+xprintf                  0x800'1215   0x18  Code  Gb  xprintf.o [1]
+xputc                    0x800'0f6d   0x32  Code  Gb  xprintf.o [1]
+xputs                    0x800'0f9f   0x16  Code  Gb  xprintf.o [1]
+xvprintf                 0x800'0fb5  0x260  Code  Lc  xprintf.o [1]
+
+
+[1] = C:\Users\Иван Панферов\Desktop\stm_labs\i2c\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  5 218 bytes of readonly  code memory
+  1 350 bytes of readonly  data memory
+  3 103 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
